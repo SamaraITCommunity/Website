@@ -5,7 +5,8 @@ permalink: /materials/sitconf-2025-management/lead-survival/
 
 **Пример страницы доклада**, составленный по программе конференции.
 
-**Событие:** [SITConf 2025 Management](./sitconf-2025.md).  
+**Событие:** [SITConf 2025 Management](./sitconf-2025.md).
+
 **Время:** 11:10–12:00.
 
 **Спикер:** [Сергей Семикин](./person-sergey-semikin.md).

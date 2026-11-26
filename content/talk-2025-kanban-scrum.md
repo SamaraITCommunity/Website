@@ -5,7 +5,8 @@ permalink: /materials/sitconf-2025-management/kanban-scrum/
 
 **Пример страницы доклада**, составленный по программе конференции.
 
-**Событие:** [SITConf 2025 Management](./sitconf-2025.md).  
+**Событие:** [SITConf 2025 Management](./sitconf-2025.md).
+
 **Время:** 13:00–13:50.
 
 **Спикер:** [Андрей Миронов](./person-andrey-mironov.md).

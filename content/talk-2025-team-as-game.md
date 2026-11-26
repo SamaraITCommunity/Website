@@ -5,7 +5,8 @@ permalink: /materials/sitconf-2025-management/team-as-game/
 
 **Пример страницы доклада**, составленный по программе конференции.
 
-**Событие:** [SITConf 2025 Management](./sitconf-2025.md).  
+**Событие:** [SITConf 2025 Management](./sitconf-2025.md).
+
 **Время:** 17:00–17:50.
 
 **Спикер:** [Дмитрий Ивко](./person-dmitry-ivko.md).

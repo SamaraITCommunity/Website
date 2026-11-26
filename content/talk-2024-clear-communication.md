@@ -5,7 +5,8 @@ permalink: /materials/sitconf-2024-softskills/clear-communication/
 
 **Пример страницы доклада**, составленный по программе конференции.
 
-**Событие:** [SITConf 2024 SoftSkills](./sitconf-2024.md).  
+**Событие:** [SITConf 2024 SoftSkills](./sitconf-2024.md).
+
 **Время:** 13:00–13:50.
 
 **Спикер:** в исходных данных не указан для этого доклада.
