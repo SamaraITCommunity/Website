@@ -308,3 +308,18 @@ footer { padding: 2rem 0; color: var(--muted); font-size: .9rem; }
 .calendar-grid { border-top: 1px solid var(--border); border-left: 1px solid var(--border); }.calendar-day { min-width: 0; min-height: 6rem; padding: .55rem; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }.calendar-current-week { background: var(--profile-tag-bg, #f2f5ff); }.calendar-day-number { display: inline-grid; place-items: center; min-width: 1.7rem; height: 1.7rem; font-size: .85rem; }.calendar-day-today .calendar-day-number { color: var(--background); background: var(--accent); border-radius: 50%; font-weight: 700; }.calendar-event { display: block; margin-top: .4rem; padding: .35rem; border-radius: .35rem; color: var(--accent); background: var(--profile-tag-bg, #f2f5ff); font-size: .7rem; font-weight: 700; overflow-wrap: anywhere; }
 @media (max-width: 700px) { .week-calendar { padding: 1rem; }.calendar-weekdays span { padding: .3rem; text-align: center; }.calendar-day { min-height: 4.8rem; padding: .2rem; }.calendar-day-number { font-size: .75rem; }.calendar-event { font-size: .6rem; padding: .2rem; } }
 
+/* Проекты и архив SITCast */
+.projects-page { width: 100%; padding: 3rem 0 4rem; }.projects-page h1 { margin: .7rem 0 1rem; }.projects-lead { max-width: 46rem; color: var(--muted); line-height: 1.7; font-size: 1.1rem; }
+.projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 2rem 0 3rem; }.project-card { display: flex; flex-direction: column; min-height: 13rem; padding: 1.5rem; border: 1px solid var(--border); border-radius: .85rem; background: var(--profile-surface, #fff); }.project-card h2 { margin: 1.1rem 0 .5rem; font-size: 1.3rem; }.project-card p, .projects-join p { color: var(--muted); font-size: .9rem; line-height: 1.6; }.project-card-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: auto; padding-top: 1rem; }.project-card-links a, .projects-join a, .sitcast-back a { color: var(--accent); font-size: .9rem; font-weight: 650; }
+.projects-join { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; padding: 1.5rem; border: 1px solid var(--border); border-radius: .85rem; background: var(--profile-surface, #fff); }.projects-join h2 { margin: 0; font-size: 1.25rem; }.projects-join p { margin: .5rem 0 0; }.projects-join > div:last-child { display: flex; gap: 1rem; flex-wrap: wrap; }
+.sitcast-archive, .sitcast-checks { margin-top: 3rem; }.sitcast-archive h2, .sitcast-checks h2 { margin: .5rem 0 1rem; font-size: 1.5rem; }.sitcast-empty { padding: 1.5rem; border: 1px dashed var(--border); border-radius: .8rem; }.sitcast-empty p, .sitcast-checks p, .sitcast-checks li { color: var(--muted); font-size: .9rem; line-height: 1.7; }.sitcast-checks ul { padding-left: 1.3rem; }.sitcast-checks li { margin: .45rem 0; }.sitcast-checks strong { color: var(--text); }.sitcast-back { margin-top: 2rem; }
+@media (max-width: 600px) { .projects-page { padding: 2rem 0 3rem; }.projects-grid { grid-template-columns: 1fr; } }
+
+
+.sitcast-archive a { color: var(--accent); }
+.sitcast-archive > p { color: var(--muted); font-size: .9rem; line-height: 1.6; }
+
+.sitcast-episodes { display: grid; gap: .75rem; margin-top: 1.5rem; }
+.sitcast-episode { padding: 1.25rem; border: 1px solid var(--border); border-radius: .7rem; background: var(--profile-surface, #fff); }
+.sitcast-episode time, .sitcast-episode span { color: var(--muted); font-size: .8rem; }.sitcast-episode h3 { margin: .5rem 0; font-size: 1rem; }.sitcast-episode p { color: var(--muted); font-size: .9rem; line-height: 1.6; }.sitcast-episode a { display: inline-block; margin-left: .8rem; font-size: .85rem; }
+
