@@ -323,6 +323,14 @@ footer { padding: 2rem 0; color: var(--muted); font-size: .9rem; }
 @media (max-width: 900px) { .participation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .participation-page { padding: 2rem 0 3rem; }.participation-grid, .participation-roles { grid-template-columns: 1fr; } }
 
+/* О сообществе */
+.about-page { width: 100%; padding: 3rem 0 4rem; }.about-page h1 { margin: .7rem 0 1rem; }.about-lead { max-width: 48rem; color: var(--muted); font-size: 1.1rem; line-height: 1.7; }
+.about-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 3rem 0; padding: 2rem; border: 1px solid var(--border); border-radius: .9rem; background: var(--profile-surface, #fff); }.about-intro h2, .about-section h2, .about-contact h2 { margin: .5rem 0 1rem; font-size: clamp(1.7rem, 4vw, 2.3rem); letter-spacing: -.04em; }.about-intro p:not(.profile-index), .about-description, .about-contact p:not(.profile-index) { color: var(--muted); font-size: .95rem; line-height: 1.7; }.about-intro p:first-child { margin-top: 0; }
+.about-section { margin: 4rem 0; }.about-principles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; margin-top: 1.5rem; }.about-principles div { padding: 1.3rem; border: 1px solid var(--border); border-radius: .75rem; }.about-principles span { color: var(--accent); font-size: .7rem; font-weight: 800; }.about-principles h3 { margin: 1rem 0 .5rem; font-size: 1rem; }.about-principles p, .about-note { color: var(--muted); font-size: .85rem; line-height: 1.6; }
+.about-links { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1.5rem 0; }.about-links a { padding: .7rem .9rem; border: 1px solid var(--border); border-radius: .5rem; color: var(--accent); font-size: .85rem; font-weight: 650; text-decoration: none; }.about-links a:hover { border-color: var(--accent); }
+.about-contact { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding: 1.5rem; border: 1px solid var(--border); border-radius: .85rem; background: var(--profile-surface, #fff); }.about-contact p { max-width: 40rem; }.about-contact a { color: var(--accent); font-weight: 650; }
+@media (max-width: 850px) { .about-principles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .about-page { padding: 2rem 0 3rem; }.about-intro, .about-principles { grid-template-columns: 1fr; }.about-intro { gap: .5rem; padding: 1.4rem; } }
 
 .sitcast-archive a { color: var(--accent); }
 .sitcast-archive > p { color: var(--muted); font-size: .9rem; line-height: 1.6; }

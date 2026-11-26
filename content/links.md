@@ -7,7 +7,9 @@ permalink: /links/
 
 ## Сайты, группы и каналы SITC
 
-Адреса сайтов, групп во ВКонтакте и каналов SITC добавим сюда после уточнения.
+- [Samara IT Community — группа VK](https://vk.ru/samara_it_community)
+- [Samara IT Community — канал Telegram](https://t.me/samara_it_community)
+- [Samara IT Region — сайт, указанный в Telegram-канале](https://samaraitregion.ru)
 
 Значок и подпись Telegram обозначают ссылки на чаты в Telegram.
 
