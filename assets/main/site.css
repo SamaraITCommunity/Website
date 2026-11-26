@@ -1,0 +1,20 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: system-ui, sans-serif; color: #1c2432; background: #f7f8fc; }
+header, main, footer { width: min(100% - 3rem, 70rem); margin: 0 auto; }
+header { padding: 2rem 0; }
+.brand { color: #263d9a; font-weight: 700; text-decoration: none; }
+main { flex: 1; display: flex; align-items: center; }
+.hero { max-width: 48rem; padding: 4rem 0; }
+.eyebrow { color: #5268b7; font-weight: 700; }
+h1 { margin: .5rem 0 1rem; font-size: clamp(3rem, 9vw, 6rem); letter-spacing: -.05em; }
+.hero p { font-size: 1.2rem; line-height: 1.6; }
+.hero .note { margin-top: 3rem; color: #657086; font-size: 1rem; }
+footer { padding: 2rem 0; color: #657086; font-size: .9rem; }
+
+.auth-card { width: min(100%, 36rem); padding: 3rem 0; }
+.auth-card h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
+.auth-card form { display: grid; gap: 1rem; }
+.auth-card label { display: grid; gap: .4rem; font-weight: 600; }
+.auth-card input, .auth-card button { padding: .75rem; font: inherit; border: 1px solid #bcc6dd; border-radius: .4rem; }
+.auth-card button { cursor: pointer; color: white; background: #263d9a; }
+.auth-card a { color: #263d9a; }

@@ -1,0 +1,4 @@
+---
+title: Сообщества
+layout: communities
+---

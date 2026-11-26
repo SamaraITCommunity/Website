@@ -1,0 +1,6 @@
+title: SITC — Самарское IT-сообщество
+description: Локальное IT-сообщество
+base_url: http://localhost:8080
+languages: [ru]
+
+theme: sitc
