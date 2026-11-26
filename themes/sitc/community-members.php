@@ -1,0 +1,15 @@
+<?php
+
+declare(strict_types=1);
+
+require __DIR__ . '/partials/chrome-start.php';
+?>
+<main>
+    <article class="<?= $isHome ? 'hero' : 'page' ?>">
+        <?php if ($isHome): ?><p class="eyebrow">Локальное IT-сообщество</p><?php endif; ?>
+        <h1><?= $h($entryTitle) ?></h1>
+        <div class="page-content"><?= $content ?></div>
+        <?php require dirname(__DIR__, 2) . '/src/Modules/Community/Presentation/Static/member-cards.php'; ?>
+    </article>
+</main>
+<?php require __DIR__ . '/partials/chrome-end.php'; ?>
