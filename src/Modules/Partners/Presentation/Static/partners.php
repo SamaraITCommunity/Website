@@ -8,8 +8,8 @@
             <section class="partner-category"><span class="partner-number">03</span><h2>Информационные партнёры</h2><p>Рассказывают о встречах и помогают участникам находить друг друга.</p></section>
         </div>
         <section class="partners-directory" aria-labelledby="partners-list-title">
-            <div><p class="profile-kicker">СООБЩЕСТВО И ПАРТНЁРЫ</p><h2 id="partners-list-title">Наши партнёры</h2><p>Здесь появятся организации и люди, которые поддерживают SITC.</p></div>
-            <div class="partners-empty">Партнёров пока нет в каталоге.</div>
+            <div><p class="profile-kicker">СООБЩЕСТВО И ПАРТНЁРЫ</p><h2 id="partners-list-title">Наши партнёры</h2><p>Партнёры прошедших конференций. Информация размещена в тестовом режиме.</p></div>
+            <div class="partners-empty"><strong>SITConf 2025 Management</strong><br><a href="<?= $h($url('/partners/func/')) ?>">Коворкинг fun(c)</a> · ECOM.TECH<br><br><strong>SITConf 2024 SoftSkills</strong><br>StartupSamara · YellowRockets · Dodo Pizza</div>
         </section>
         <section class="partner-example" aria-labelledby="partner-example-title">
             <div class="partner-example-copy"><p class="profile-kicker">ИДЕЯ ДЛЯ ОБСУЖДЕНИЯ</p><h2 id="partner-example-title">Вклад, который заметен</h2><p>У партнёров тоже могут быть уровни и медали за поддержку встреч, помощь сообществу и распространение знаний.</p><p class="partner-example-note">Ниже — пример оформления, условия и правила будут определены позже.</p></div>
