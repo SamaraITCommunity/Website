@@ -1,0 +1,27 @@
+:root { color-scheme: light; --background: #f7f8fc; --text: #1c2432; --accent: #263d9a; --muted: #657086; --border: #cdd4e5; }
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme]) { color-scheme: dark; --background: #151923; --text: #eef1fa; --accent: #a7b8ff; --muted: #aab4c9; --border: #49536a; }
+}
+:root[data-theme="dark"] { color-scheme: dark; --background: #151923; --text: #eef1fa; --accent: #a7b8ff; --muted: #aab4c9; --border: #49536a; }
+:root[data-theme="light"] { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; font-family: system-ui, sans-serif; color: var(--text); background: var(--background); }
+.site-header, main, footer { width: min(100% - 3rem, 70rem); margin: 0 auto; }
+.site-header { padding: 2rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+.brand { color: var(--accent); font-weight: 700; text-decoration: none; white-space: nowrap; }
+.header-actions, .site-nav ul { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.site-nav ul { list-style: none; margin: 0; padding: 0; }
+.site-nav a { color: var(--text); text-decoration: none; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent); }
+.theme-toggle { padding: .5rem .8rem; border: 1px solid var(--border); border-radius: .5rem; color: var(--text); background: transparent; font: inherit; cursor: pointer; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+main { flex: 1; display: flex; align-items: center; }
+.hero, .page { max-width: 48rem; padding: 4rem 0; }
+.eyebrow { color: var(--accent); font-weight: 700; }
+h1 { margin: .5rem 0 1rem; font-size: clamp(2.7rem, 8vw, 5rem); letter-spacing: -.05em; line-height: 1.1; }
+.hero h1 { font-size: clamp(3rem, 9vw, 6rem); }
+.page-content { font-size: 1.2rem; line-height: 1.6; }
+.page-content a { color: var(--accent); }
+.hero .page-content p:last-child { margin-top: 3rem; color: var(--muted); font-size: 1rem; }
+footer { padding: 2rem 0; color: var(--muted); font-size: .9rem; }
+@media (max-width: 600px) { .header-actions { gap: 1rem; } .site-nav ul { gap: 1rem; } .hero, .page { padding: 3rem 0; } }

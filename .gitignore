@@ -27,3 +27,6 @@ c3.php
 
 # Local environment configuration
 .env
+
+# Generated YiiPress site
+/output/

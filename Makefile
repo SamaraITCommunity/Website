@@ -3,7 +3,7 @@
 COMPOSE ?= docker compose
 ARGS ?=
 
-.PHONY: help init build install up down restart ps logs shell composer yii test
+.PHONY: help init build install up down restart ps logs shell composer yii test site-build
 
 help: ## Показать доступные команды
 	@awk 'BEGIN {FS = ":.*## "} /^[a-zA-Z_-]+:.*## / {printf "  %-12s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -12,6 +12,7 @@ init: ## Создать .env, собрать образы, установить 
 	@test -f .env || cp .env.example .env
 	$(COMPOSE) build
 	$(COMPOSE) run --rm app composer install
+	$(MAKE) site-build
 	$(COMPOSE) up -d
 
 build: ## Собрать образы
@@ -46,3 +47,7 @@ yii: ## Выполнить команду Yii; например, make yii ARGS="
 
 test: ## Запустить тесты Codeception; ARGS позволяет выбрать набор
 	$(COMPOSE) run --rm app vendor/bin/codecept run $(ARGS)
+
+site-build: ## Собрать статические страницы YiiPress в output/
+	@mkdir -p output
+	$(COMPOSE) run --rm --no-deps --user "$$(id -u):$$(id -g)" yiipress build --workers=1 $(ARGS)

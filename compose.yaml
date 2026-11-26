@@ -1,5 +1,13 @@
 name: my-square
 services:
+  yiipress:
+    image: ${YIIPRESS_IMAGE:-ghcr.io/yiipress/engine-static:nightly}
+    platform: linux/amd64
+    profiles: [tools]
+    working_dir: /site
+    volumes:
+      - .:/site
+
   app:
     build:
       context: .
