@@ -20,6 +20,9 @@ $isHome = $permalink === '/';
     </script>
     <link rel="stylesheet" href="<?= $h($themeAsset('site.css')) ?>">
     <script src="<?= $h($themeAsset('theme.js')) ?>" defer></script>
+    <?php if ($includeEventsScript ?? false): ?>
+        <script src="<?= $h($themeAsset('events-calendar.js')) ?>" defer></script>
+    <?php endif; ?>
     <?php if ($includeFormsAdminScript ?? false): ?>
         <script src="<?= $h($themeAsset('forms-admin.js')) ?>" defer></script>
     <?php endif; ?>
