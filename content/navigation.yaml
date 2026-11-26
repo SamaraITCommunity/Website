@@ -5,17 +5,23 @@ main:
     url: /about/
   - title: Встречи
     url: /meetings/
-  - title: Материалы
-    url: /materials/
   - title: Сообщества
     url: /communities/
-  - title: Уровни и навыки
-    url: /progress/
-  - title: Партнёры
-    url: /partners/
+  - title: Доска задач
+    url: /tasks/
   - title: Участники
     url: /members/
+  - title: Материалы
+    url: /materials/
+  - title: Ссылки
+    url: /links/
+  - title: Партнёры
+    url: /partners/
+  - title: Уровни и навыки
+    url: /progress/
   - title: Профиль (пример)
     url: /profile/
+  - title: Формы (админ)
+    url: /forms-admin/
   - title: Вход
     url: /auth/login
