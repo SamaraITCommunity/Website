@@ -7,6 +7,8 @@ namespace App\Modules\Identity\Presentation\Web;
 use App\Modules\Identity\Application\Authentication;
 use App\Modules\Identity\Domain\Permissions;
 use App\Modules\Identity\Infrastructure\Accounts;
+use App\Modules\Profile\Domain\Levels;
+use App\Modules\Profile\Infrastructure\PointsRepository;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Yiisoft\Router\CurrentRoute;
@@ -14,7 +16,7 @@ use Yiisoft\Yii\View\Renderer\WebViewRenderer;
 
 final readonly class AccountAction
 {
-    public function __construct(private Authentication $auth, private Accounts $accounts, private CurrentRoute $route, private WebViewRenderer $views, private ResponseFactoryInterface $responses) {}
+    public function __construct(private Authentication $auth, private Accounts $accounts, private PointsRepository $points, private CurrentRoute $route, private WebViewRenderer $views, private ResponseFactoryInterface $responses) {}
 
     public function __invoke(): ResponseInterface
     {
@@ -31,7 +33,8 @@ final readonly class AccountAction
             return $this->responses->createResponse(403)->withHeader('Cache-Control', 'no-store');
         }
         $roles = $this->accounts->activeCommunityRoles((int) $account['id']);
-        return $this->views->render(__DIR__ . '/account', compact('account', 'roles', 'permission'))
+        $progress = Levels::fromPoints($this->points->total((int) $account['id']));
+        return $this->views->render(__DIR__ . '/account', compact('account', 'roles', 'permission', 'progress'))
             ->withHeader('Cache-Control', 'no-store');
     }
 }

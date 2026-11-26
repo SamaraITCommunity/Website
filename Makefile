@@ -3,7 +3,7 @@
 COMPOSE ?= docker compose
 ARGS ?=
 
-.PHONY: help init build install up down restart ps logs shell composer yii test site-build
+.PHONY: help init build install up down restart ps logs shell composer yii test site-build migrate
 
 help: ## Показать доступные команды
 	@awk 'BEGIN {FS = ":.*## "} /^[a-zA-Z_-]+:.*## / {printf "  %-12s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -50,4 +50,8 @@ test: ## Запустить тесты Codeception; ARGS позволяет вы
 
 site-build: ## Собрать статические страницы YiiPress в output/
 	@mkdir -p output
-	$(COMPOSE) run --rm --no-deps --user "$$(id -u):$$(id -g)" yiipress build --workers=1 $(ARGS)
+	$(COMPOSE) run --rm --no-deps --user "$$(id -u):$$(id -g)" yiipress build --workers=1 --no-cache $(ARGS)
+
+migrate: ## Применить миграции учётных записей и профилей
+	$(COMPOSE) exec app php yii identity:migrate
+	$(COMPOSE) exec app php yii profile:migrate

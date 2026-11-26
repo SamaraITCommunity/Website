@@ -1,0 +1,4 @@
+---
+title: Участники
+layout: members
+---
