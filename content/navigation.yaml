@@ -3,8 +3,12 @@ main:
     url: /
   - title: О нас
     url: /about/
-  - title: Встречи
+  - title: События
     url: /meetings/
+  - title: Проекты
+    url: /projects/
+  - title: Участие
+    url: /participation/
   - title: Сообщества
     url: /communities/
   - title: Доска задач
@@ -23,5 +27,7 @@ main:
     url: /profile/
   - title: Формы (админ)
     url: /forms-admin/
+  - title: План разработки
+    url: /development-plan/
   - title: Вход
     url: /auth/login

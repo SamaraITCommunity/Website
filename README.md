@@ -57,9 +57,14 @@ WEB_BIND=0.0.0.0
 - [Профили и вклад участников](src/Modules/Profile/README.md)
 - [Сообщества и гильдии](src/Modules/Community/README.md)
 - [Команды событий и проектов](src/Modules/Teams/README.md)
+- [Проекты сообщества](src/Modules/Projects/README.md)
 - [Встречи и события](src/Modules/Events/README.md)
 - [Материалы и история](src/Modules/Materials/README.md)
 - [Формы](src/Modules/Forms/README.md)
 - [Доска задач и уведомления](src/Modules/Tasks/README.md)
 - [Партнёры](src/Modules/Partners/README.md)
 - [Каталог ссылок](src/Modules/Directory/README.md)
+
+Черновик предложения по структуре сайта и его разбор: [скетч](docs/drafts/site-structure-proposal.md), [разбор](docs/drafts/site-structure-review.md).
+
+Страница для встречи администраторов: `/development-plan/` (исходный текст — `content/development-plan.md`).
