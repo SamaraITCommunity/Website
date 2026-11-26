@@ -1,23 +1,29 @@
     <section class="members-page" aria-labelledby="members-title">
         <p class="profile-kicker">САМАРСКОЕ IT-СООБЩЕСТВО</p>
         <h1 id="members-title">Участники</h1>
-        <p class="members-lead">Знакомьтесь с людьми, которые делятся знаниями и создают новое вместе.</p>
-        <p class="members-notice">Это примеры карточек. Настоящий список участников появится после подключения профилей.</p>
+        <p class="members-lead">Люди, которые помогли провести конференции SITConf.</p>
+        <p class="members-notice">Тестовый каталог по предоставленным материалам; это не зарегистрированные аккаунты.</p>
         <ul class="members-grid">
-            <li class="member-card">
-                <div class="member-card-head"><span class="member-avatar" aria-hidden="true">М</span><span><strong>Максим</strong><small>Backend-разработчик · PHP</small></span></div>
-                <p>Интересы</p><ul class="profile-tags"><li>PHP</li><li>Схемотехника</li><li>3D-печать</li></ul>
-                <a class="member-link" href="<?= $h($url('/profile/')) ?>">Посмотреть пример профиля <span aria-hidden="true">↗</span></a>
-            </li>
-            <li class="member-card">
-                <div class="member-card-head"><span class="member-avatar member-avatar-alt" aria-hidden="true">А</span><span><strong>Анна</strong><small>Аналитик</small></span></div>
-                <p>Интересы</p><ul class="profile-tags"><li>Аналитика</li><li>Данные</li><li>Сообщества</li></ul>
-                <span class="member-placeholder">Пример участника</span>
-            </li>
-            <li class="member-card">
-                <div class="member-card-head"><span class="member-avatar member-avatar-third" aria-hidden="true">Д</span><span><strong>Дмитрий</strong><small>Разработчик · IoT</small></span></div>
-                <p>Интересы</p><ul class="profile-tags"><li>IoT</li><li>Электроника</li><li>3D-печать</li></ul>
-                <span class="member-placeholder">Пример участника</span>
-            </li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">А</span><span><strong>Алексей Сундуков</strong><small>@alekciy_sun · Организаторы · Спикеры · Фотографы</small></span></div><a class="member-link" href="<?= $h($url('/members/alexey-sundukov/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">М</span><span><strong>Михаил Жирнов</strong><small>@daovix · Организаторы</small></span></div><a class="member-link" href="<?= $h($url('/members/mikhail-zhirnov/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">А</span><span><strong>Алина Филиппенко</strong><small>@Filippenko_Alina · Организаторы · Фотографы · Создатели сайта · Создатель сайта</small></span></div><a class="member-link" href="<?= $h($url('/members/alina-filippenko/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">М</span><span><strong>Максим Ковалевский</strong><small>@skalice74 · Организаторы</small></span></div><a class="member-link" href="<?= $h($url('/members/maxim-kovalevsky/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">А</span><span><strong>Айнура Сейдалиева</strong><small>Организаторы · Создатели сайта</small></span></div><a class="member-link" href="<?= $h($url('/members/aynura-seidalieva/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">С</span><span><strong>Сергей Семикин</strong><small>Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/sergey-semikin/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">С</span><span><strong>Сергей Семыкин</strong><small>@Sergey_Semikin · Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/sergey-semykin/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">П</span><span><strong>Павел Гордеев</strong><small>@pvgord · Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/pavel-gordeev/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">А</span><span><strong>Андрей Миронов</strong><small>Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/andrey-mironov/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">А</span><span><strong>Александр Мазуренко</strong><small>Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/alexandr-mazurenko/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">В</span><span><strong>Варвара Ланцова</strong><small>@varvara_career · Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/varvara-lantsova/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">Д</span><span><strong>Дмитрий Ивко</strong><small>Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/dmitry-ivko/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">Р</span><span><strong>Роман Мандрейкин</strong><small>Помощники</small></span></div><a class="member-link" href="<?= $h($url('/members/roman-mandreykin/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">Б</span><span><strong>Борис Володкин</strong><small>Фотографы</small></span></div><a class="member-link" href="<?= $h($url('/members/boris-volodkin/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">М</span><span><strong>Максим Гусев</strong><small>@Maxgusev63 · Видеограф</small></span></div><a class="member-link" href="<?= $h($url('/members/maxim-gusev/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">И</span><span><strong>Ирина Орлова</strong><small>@iallegro · Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/irina-orlova/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">А</span><span><strong>Александра Сергеева</strong><small>@IstinayaLady · Спикеры</small></span></div><a class="member-link" href="<?= $h($url('/members/alexandra-sergeeva/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">Е</span><span><strong>Екатерина Шабанова</strong><small>Помощники</small></span></div><a class="member-link" href="<?= $h($url('/members/ekaterina-shabanova/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">Я</span><span><strong>Яна Назарова</strong><small>Помощники</small></span></div><a class="member-link" href="<?= $h($url('/members/yana-nazarova/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">К</span><span><strong>Ксения Баскакова</strong><small>@fnlvr · Фотографы</small></span></div><a class="member-link" href="<?= $h($url('/members/kseniya-baskakova/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
+            <li class="member-card"><div class="member-card-head"><span class="member-avatar" aria-hidden="true">И</span><span><strong>Ильдар Даянов</strong><small>@nakedpandawashitbytelegram · Дизайнер</small></span></div><a class="member-link" href="<?= $h($url('/members/ildar-dayanov/')) ?>">Участие в SITConf <span aria-hidden="true">↗</span></a></li>
         </ul>
     </section>

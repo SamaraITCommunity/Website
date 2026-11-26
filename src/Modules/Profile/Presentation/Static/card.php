@@ -5,7 +5,8 @@
                 <div class="profile-avatar" aria-label="Фотография не добавлена"><span>М</span></div>
                 <div class="profile-heading">
                     <div class="profile-heading-top"><span class="profile-label">САМАРСКОЕ IT-СООБЩЕСТВО</span><span class="profile-location"><span aria-hidden="true">●</span> Самара</span></div>
-                    <h1 id="profile-name">Максим</h1>
+                    <h1 id="profile-name">Максим Ковалевский</h1>
+                    <p class="profile-nickname">@Skalice132 <span>· ник участника</span></p>
                     <p class="profile-profession">Backend-разработчик <span> / </span> PHP</p>
                     <p class="profile-work">Место работы не указано</p>
                     <p class="profile-status"><span class="profile-status-dot" aria-hidden="true"></span> Рассматриваю предложения о работе</p>
@@ -30,7 +31,7 @@
                 <section class="profile-section profile-help">
                     <div class="profile-section-heading"><span class="profile-index">03</span><h2>Можно обратиться за помощью</h2></div>
                     <p>Темы, которые готов обсудить с участниками</p>
-                    <ul class="profile-tags profile-tags-help"><li><span aria-hidden="true">↗</span> PHP</li><li><span aria-hidden="true">↗</span> 3D-печать</li></ul>
+                    <ul class="profile-tags profile-tags-help"><li><span aria-hidden="true">↗</span> PHP</li><li><span aria-hidden="true">↗</span> 3D-печать</li><li><span aria-hidden="true">↗</span> Поиск материалов</li></ul>
                 </section>
             </div>
             <div class="profile-community">
@@ -51,6 +52,14 @@
                     </ul>
                 </section>
             </div>
+            <section class="profile-events" aria-labelledby="profile-events-title">
+                <div class="profile-section-heading"><span class="profile-index">06</span><h2 id="profile-events-title">Участие в конференциях</h2></div>
+                <p>Примеры событий и ролей в сообществе</p>
+                <ul class="profile-event-list">
+                    <li><span class="profile-event-icon" aria-hidden="true">▦</span><span><a href="<?= $h($url('/meetings/sitconf-2025-management/')) ?>">SITConf 2025 Management <span aria-hidden="true">↗</span></a><small>Организатор · 5 апреля 2025</small></span></li>
+                    <li><span class="profile-event-icon" aria-hidden="true">▦</span><span><a href="<?= $h($url('/meetings/sitconf-2024-softskills/')) ?>">SITConf 2024 SoftSkills <span aria-hidden="true">↗</span></a><small>Организатор · 2024</small></span></li>
+                </ul>
+            </section>
             <div class="profile-card-footer"><span>■ <strong>SITC</strong> <span class="profile-footer-divider">/</span> СВОИ ЛЮДИ, ОБЩИЕ ИДЕИ</span><span>ПРИМЕР ПРОФИЛЯ</span></div>
         </div>
         <p class="profile-caption">Это пример того, как может выглядеть профиль участника SITC.</p>
