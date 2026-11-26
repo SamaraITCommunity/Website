@@ -1,0 +1,16 @@
+<section class="participation-page" aria-labelledby="participation-title">
+    <p class="profile-kicker">КАЖДЫЙ ВКЛАД ВАЖЕН</p>
+    <h1 id="participation-title">Участвовать в SITC</h1>
+    <p class="participation-lead">Приходить на встречи, делиться знаниями, помогать с организацией или поддерживать проекты — выбирайте то, что вам интересно.</p>
+    <div class="participation-grid">
+        <article class="participation-card"><span class="participation-number">01 / ВСТРЕЧИ</span><h2>Прийти на событие</h2><p>Знакомьтесь с сообществом на конференциях и митапах. Посмотрите архив и будущие анонсы, когда они появятся.</p><a href="<?= $h($url('/meetings/')) ?>">Смотреть события ↗</a></article>
+        <article class="participation-card"><span class="participation-number">02 / ПОМОЩЬ</span><h2>Помочь команде</h2><p>Помощь с площадкой, встречей гостей, сайтом или материалами тоже делает события возможными.</p><a href="<?= $h($url('/tasks/')) ?>">Примеры задач ↗</a><small>Отклики пока не подключены.</small></article>
+        <article class="participation-card"><span class="participation-number">03 / ВЫСТУПЛЕНИЯ</span><h2>Поделиться опытом</h2><p>Идеи докладов и рассказы о практике помогают участникам учиться друг у друга.</p><a href="<?= $h($url('/meetings/sitconf-2025-management/speaker-application/')) ?>">Пример заявки спикера ↗</a><small>Форма демонстрационная и не принимает заявки.</small></article>
+        <article class="participation-card"><span class="participation-number">04 / ПАРТНЁРСТВО</span><h2>Поддержать SITC</h2><p>Площадки, информационная помощь, знания и другие ресурсы помогают развивать инициативы.</p><a href="<?= $h($url('/partners/')) ?>">О партнёрстве ↗</a><small>Контакты организаторов ещё уточняются.</small></article>
+    </div>
+    <section class="participation-section" aria-labelledby="roles-title"><p class="profile-index">РОЛИ И ВОЗМОЖНОСТИ</p><h2 id="roles-title">Как можно участвовать</h2><p class="participation-copy">Один человек может помогать несколькими способами. Роль на событии показывает конкретный вклад, а блок «Чем могу помочь» в будущем позволит рассказать о готовности участвовать.</p>
+        <div class="participation-roles"><div><strong>Волонтёр</strong><span>Помогает участникам и команде на событии.</span></div><div><strong>Спикер</strong><span>Делится опытом и знаниями на встречах.</span></div><div><strong>Организатор</strong><span>Помогает подготовить событие или проект.</span></div><div><strong>Партнёр</strong><span>Поддерживает сообщество ресурсами, площадкой или информацией.</span></div></div>
+        <p class="participation-note">Эти роли описывают участие и не выдают автоматически права администратора сайта. Назначение ролей в примерах пока не подключено.</p>
+    </section>
+    <section class="participation-contribution" aria-labelledby="contribution-title"><div><p class="profile-index">ВКЛАД И ПРИЗНАНИЕ</p><h2 id="contribution-title">Видеть и благодарить за вклад</h2><p>В личном кабинете уже есть накопительные очки и уровни. Медали и подтверждение вклада пока обсуждаются; возможный сезонный рейтинг ещё не утверждён и не работает.</p></div><a href="<?= $h($url('/progress/')) ?>">Уровни и навыки ↗</a></section>
+</section>
