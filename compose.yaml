@@ -31,7 +31,7 @@ services:
   nginx:
     image: nginx:1.27-alpine
     ports:
-      - "127.0.0.1:${WEB_PORT:-8080}:80"
+      - "${WEB_BIND:-127.0.0.1}:${WEB_PORT:-8080}:80"
     volumes:
       - .:/app:ro
       - app_assets:/app/public/assets:ro
